@@ -69,3 +69,53 @@ print(f"You ordered a {pizza['crust']}-crust pizza with the following " +
 
 for topping in pizza['toppings']:
     print(f"\t{topping}")
+
+# Favorite languages scenario, we can allow people to choose multiple 
+# languages instead of just one.
+
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+}
+
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite programming languages are:")
+    for language in languages: # nesting a for loop inside another
+        print(f"\t{language.title()}") 
+
+# We should not nest too deeply (1 nested loop inside another is enough and 
+# nesting dictionaries in lists or vice versa)
+# as it becomes incredibly inefficient and complex.
+
+# A dictionary in a dictionary.
+# It can become complicated quickly so we need to plan it properly.
+# Scenario, if we have several users for a website, each with a unique
+# username, you can use the usernames as the keys in the dictionary. We can
+# then store information about each user by using a dictionary as the value
+# associated with their username i.e. first name, last name, and location.
+users = {
+    'einstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+    },
+    'mercury': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+    }
+}
+
+for username, user_info in users.items():
+    print(f"\nUsername: {username}")
+    full_name = f"{user_info['first']} {user_info['last']}"
+    location = f"{user_info['location']}"
+
+    print(f"\tFull name: {full_name.title()}")
+    print(f"\tLocation: {location.title()}")
+
+# When dictionaries are nested in another we must ensure that they are
+# structured clearly and consistently, although each structure can be 
+# different, it can become complicated.
