@@ -3,6 +3,7 @@
 # and should return a dictionary containing these two pieces of information.
 
 def make_album(artist_name, album_title, number_of_songs=None):
+    """Return an album dictionary."""
     if number_of_songs:
         album = {
         'artist_name': artist_name,
