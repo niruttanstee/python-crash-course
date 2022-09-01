@@ -10,4 +10,22 @@
 # line provides.
 
 def make_pizza(*toppings): # add an asterisk as a parameter field
-    
+    """Prints the pizza toppings that have been requested."""
+    print(toppings)
+
+# The asterisk in the parameter name *toppings tells Python to make a tuple
+# called toppings and pack whatever values it receives into this tuple. Even
+# if function creates one value.
+
+make_pizza('pepperoni')
+
+# We can change it into so the function loops through the list of toppings
+# and describes the pizza being ordered.
+
+def make_pizza(*toppings): # add an asterisk as a parameter field
+    """Prints the pizza toppings that have been requested."""
+    for topping in toppings:
+        print(f"- {topping}")
+
+make_pizza('cheddar', 'chicken', 'bbq sauce')
+
