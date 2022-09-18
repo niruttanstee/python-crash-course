@@ -1,0 +1,6 @@
+In Python you can use loops
+In Python you can create classes
+In Python you can code OOP
+In Python you can read files
+In Python you can create modules
+In Python you can use external libraries

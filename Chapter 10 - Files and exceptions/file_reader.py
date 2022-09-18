@@ -15,7 +15,7 @@
 
 # The file seems to need the entire path. This is called the absolute file
 # path.
-file_path = "Chapter 10 - Files and exceptions/pi_digits.txt"
+file_path = "pi_digits.txt"
 
 with open(file_path) as file_object:
     contents = file_object.read()

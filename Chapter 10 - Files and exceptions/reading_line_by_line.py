@@ -5,7 +5,7 @@
 # We can use a for loop on the file object to examine each line from a file
 # one line at a time:
 
-filename = "Chapter 10 - Files and exceptions/pi_digits.txt"
+filename = "pi_digits.txt"
 
 with open(filename) as file_object:
     for line in file_object:
