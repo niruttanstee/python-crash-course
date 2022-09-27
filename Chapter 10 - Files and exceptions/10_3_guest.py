@@ -3,8 +3,8 @@
 
 # Prompt name
 
-print("Please enter your name: ")
-name = input()
+prompt = "Please enter your name: "
+name = input(prompt)
 
 with open('names.txt', 'a') as file_object:
     file_object.write(f"{name}\n")
