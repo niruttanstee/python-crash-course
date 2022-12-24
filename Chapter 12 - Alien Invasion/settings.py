@@ -11,3 +11,6 @@ class Settings:
         self.screen_height = 800
         self.bg_color = (6, 193, 227) # Blue.
         self.q2_bg_color = (0, 0, 0)
+
+        # Rocket settings.
+        self.rocket_speed = 4.0

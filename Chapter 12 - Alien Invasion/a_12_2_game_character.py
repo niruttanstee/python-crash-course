@@ -4,6 +4,7 @@
 # Make a class that draws the character at the center of the screen and match
 # the background color of the image to the background color of the screen, or
 # vice versa.
+
 import sys
 
 import pygame

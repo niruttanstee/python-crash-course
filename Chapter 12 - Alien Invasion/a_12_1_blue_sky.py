@@ -1,4 +1,5 @@
 # Make a Pygame window with a blue background
+
 import sys
 
 import pygame
