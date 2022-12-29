@@ -14,3 +14,12 @@ class Settings:
 
         # Rocket settings.
         self.rocket_speed = 4.0
+
+        # Ship settings.
+        self.ship_speed = 1.5
+
+        # Bullet settings.
+        self.bullet_speed = 5
+        self.bullet_width = 15
+        self.bullet_height = 3
+        self.bullet_color = (250, 250, 250)
